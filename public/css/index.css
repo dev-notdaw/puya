@@ -1,0 +1,198 @@
+@font-face {
+  font-family: Thunder;
+  src: url("../fonts/Thunder-BoldLC.ttf");
+}
+
+body {
+  color: #fff !important;
+  font-family: Roboto Condensed;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #2d2d2d;
+}
+
+.navbar-collapse li a {
+  color: #fff !important;
+  font-family: Roboto Condensed;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navbar-collapse li a:hover {
+  color: #feaf00 !important;
+  font-family: Roboto Condensed;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btn {
+  border-radius: 4.8125rem;
+  color: #fff;
+  font-family: Roboto Condensed;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-flex;
+  padding: 1.125rem 4.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn-bg-blue {
+  background-color: #285dff;
+}
+
+h1 {
+  font-family: Thunder;
+  font-size: 5.125rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.servicos-cards div.card {
+  border-radius: 2rem;
+  min-height: 26.75rem;
+  background: #fb438c;
+  height: 100%;
+}
+
+.servicos-cards h4.card-title {
+  color: #f6f6f6;
+  font-family: Thunder;
+  font-size: 1.83769rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.servicos-cards h4.card-title span {
+  color: #f6f6f6;
+  font-family: Roboto Condensed;
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+
+.servicos-cards p.card-info {
+  font-size: 1rem;
+  color: #fff !important;
+}
+
+.servicos-cards svg {
+  width: 100%;
+  min-height: 9rem;
+}
+
+.servicos-cards img {
+  width: 100%;
+  min-height: 9rem;
+}
+
+.carousel-indicators {
+  position: relative;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 1rem;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.carousel-indicators button {
+  border-radius: 100%;
+  height: 1rem !important;
+  width: 1rem !important;
+  margin: 0rem 10rem;
+}
+
+.carousel-inner img {
+  border-radius: 2rem;
+}
+
+.carousel-item .slide-box {
+  display: flex;
+  gap: 2rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #feaf00;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#trabalhos {
+  background-color: #285dff;
+  border-radius: 2rem;
+}
+
+.quotation {
+  color: #285dff;
+  text-align: center;
+  font-family: Thunder;
+  font-size: 9.49588rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+div.align-self-end:has(.quotation-after) {
+  transform: rotate(180deg);
+}
+
+.form-contato {
+  border-radius: 2rem;
+  background: #fb438c;
+}
+
+.form-contato form {
+  padding: 3rem 2rem;
+}
+
+.form-contato form input,
+.form-contato form textarea {
+  border-radius: 2rem;
+  border: 2px solid #fff;
+  background-color: #fb438c;
+}
+
+.form-contato form input::placeholder,
+.form-contato form textarea::placeholder {
+  color: #e4e0e0;
+  font-family: Roboto Condensed;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form-contato form textarea::placeholder {
+  padding: 0.8rem 0rem;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+nav {
+  margin-bottom: 5rem;
+}
