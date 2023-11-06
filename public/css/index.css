@@ -11,6 +11,7 @@ body {
   font-weight: 400;
   line-height: normal;
   background-color: #2d2d2d;
+  z-index: 1;
 }
 
 .navbar-collapse li a {
@@ -20,6 +21,24 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+#sobre h1 {
+  display: inline-block;
+}
+
+.rounded-underline {
+  display: inline-block;
+  padding-bottom: 1rem;
+  line-height: 55%;
+}
+
+.rounded-underline::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+  border-bottom: 1rem solid #feaf00;
 }
 
 .navbar-collapse li a:hover {
@@ -46,7 +65,18 @@ body {
   gap: 2rem;
 }
 
-.btn-bg-blue {
+.btn-bg-azul {
+  background-color: #285dff;
+}
+
+.btn-bg-azul:hover {
+  background-color: #feaf00;
+}
+
+.btn-bg-laranja {
+  background-color: #feaf00;
+}
+.btn-bg-laranja:hover {
   background-color: #285dff;
 }
 
@@ -159,12 +189,17 @@ div.align-self-end:has(.quotation-after) {
   transform: rotate(180deg);
 }
 
+#contato {
+  overflow: hidden;
+}
+
 .form-contato {
   border-radius: 2rem;
   background: #fb438c;
+  /* min-height: 50rem; */
 }
 
-.form-contato form {
+.form-contato {
   padding: 3rem 2rem;
 }
 
@@ -195,4 +230,99 @@ section {
 
 nav {
   margin-bottom: 5rem;
+}
+
+#agradecimento {
+  text-align: center;
+  position: relative;
+}
+
+#agradecimento > img {
+  position: absolute;
+  margin: auto;
+  display: block;
+  width: 45%;
+  /* height: 50%; */
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: -10%;
+  text-align: center;
+  animation: movimento-sobe 4s, movimento-lateral 10s infinite;
+}
+
+@keyframes movimento-sobe {
+  from {
+    bottom: -60%;
+  }
+  to {
+    bottom: -10%;
+  }
+}
+
+@keyframes movimento-lateral {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-9deg);
+  }
+  75% {
+    transform: rotate(19deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+footer {
+  background-color: #285dff;
+  padding: 4rem 0rem;
+}
+
+.text-footer {
+  color: #fff;
+  font-family: Roboto Condensed;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer ul li,
+footer ul li a {
+  background-color: #285dff !important;
+  color: #fff !important;
+  font-family: Roboto Condensed;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none !important;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #feaf00 !important;
+}
+
+footer .informacoes span {
+  font-size: 1.125rem;
+}
+
+.depoimento-item p {
+  color: #fff;
+  text-align: center;
+  font-family: Thunder;
+  font-size: 2.57519rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.depoimento-item h3 {
+  font-size: 1.71675rem;
 }
