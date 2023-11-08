@@ -11,6 +11,7 @@ body {
   line-height: normal;
   background-color: #2d2d2d;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 #sobre h1 {
@@ -37,7 +38,7 @@ body {
   display: block;
   width: 100%;
   border-radius: 1rem;
-  border-bottom: 1rem solid #feaf00;
+  border-bottom: 10px solid #feaf00;
 }
 
 .navbar-collapse li a:hover {
@@ -99,6 +100,7 @@ h1 {
   font-size: 1.83769rem;
   font-weight: 700;
   text-align: center;
+  width: 12.1875rem;
 }
 
 .servicos-cards h4.card-title span {
@@ -187,7 +189,7 @@ div.align-self-end:has(.quotation-after) {
 .form-contato {
   border-radius: 2rem;
   background: #fb438c;
-  /* min-height: 50rem; */
+  min-height: 55rem;
 }
 
 .form-contato {
@@ -328,6 +330,31 @@ footer .informacoes span {
 .navbar-toggler:active {
   border: none !important;
   outline: none;
+}
+
+.puya-pato {
+  position: relative;
+  display: inline;
+}
+
+#pato {
+  position: absolute;
+  right: 7%;
+  top: -208%;
+}
+
+#puya {
+  z-index: 0;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 576px) {
