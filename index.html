@@ -24,12 +24,12 @@
     />
   </head>
   <body>
-    <div class="row mx-0 justify-content-center pt-3">
-      <div class="row justify-content-center">
-        <div class="col-11">
+    <!-- <main>
+      <div class="row custom-gutter mx-0">
+        <div class="col-12">
           <div class="col-12">
             <nav class="navbar navbar-expand-lg">
-              <div class="me-5">
+              <div class="col-12 col-sm-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="104"
@@ -62,98 +62,101 @@
                     fill="#FEAF00"
                   />
                 </svg>
-              </div>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#navbar-toggler"
-                aria-controls="navbar-toggler"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="18"
-                  viewBox="0 0 26 18"
-                  fill="none"
+
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#navbar-toggler"
+                  aria-controls="navbar-toggler"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
                 >
-                  <path
-                    d="M24.6278 7.50024H1.37222C0.614365 7.50024 0 8.13816 0 8.92507V9.07506C0 9.86197 0.614365 10.4999 1.37222 10.4999H24.6278C25.3856 10.4999 26 9.86197 26 9.07506V8.92507C26 8.13816 25.3856 7.50024 24.6278 7.50024Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M24.6278 15.0005H1.37222C0.614365 15.0005 0 15.6384 0 16.4253V16.5753C0 17.3622 0.614365 18.0001 1.37222 18.0001H24.6278C25.3856 18.0001 26 17.3622 26 16.5753V16.4253C26 15.6384 25.3856 15.0005 24.6278 15.0005Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M24.6278 0H1.37222C0.614365 0 0 0.637918 0 1.42483V1.57481C0 2.36172 0.614365 2.99964 1.37222 2.99964H24.6278C25.3856 2.99964 26 2.36172 26 1.57481V1.42483C26 0.637918 25.3856 0 24.6278 0Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <div class="offcanvas offcanvas-end h-auto" id="navbar-toggler">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                  <button
-                    type="button"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="18"
+                    viewBox="0 0 26 18"
+                    fill="none"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="26"
-                      height="18"
-                      viewBox="0 0 26 18"
-                      fill="none"
+                    <path
+                      d="M24.6278 7.50024H1.37222C0.614365 7.50024 0 8.13816 0 8.92507V9.07506C0 9.86197 0.614365 10.4999 1.37222 10.4999H24.6278C25.3856 10.4999 26 9.86197 26 9.07506V8.92507C26 8.13816 25.3856 7.50024 24.6278 7.50024Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M24.6278 15.0005H1.37222C0.614365 15.0005 0 15.6384 0 16.4253V16.5753C0 17.3622 0.614365 18.0001 1.37222 18.0001H24.6278C25.3856 18.0001 26 17.3622 26 16.5753V16.4253C26 15.6384 25.3856 15.0005 24.6278 15.0005Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M24.6278 0H1.37222C0.614365 0 0 0.637918 0 1.42483V1.57481C0 2.36172 0.614365 2.99964 1.37222 2.99964H24.6278C25.3856 2.99964 26 2.36172 26 1.57481V1.42483C26 0.637918 25.3856 0 24.6278 0Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="col-sm-8">
+                <div class="offcanvas offcanvas-end h-auto" id="navbar-toggler">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button
+                      type="button"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
                     >
-                      <path
-                        d="M20.8062 7.49988H1.15929C0.519032 7.49988 0 8.13788 0 8.9249V9.0749C0 9.86192 0.519032 10.4999 1.15929 10.4999H20.8062C21.4465 10.4999 21.9655 9.86192 21.9655 9.0749V8.9249C21.9655 8.13788 21.4465 7.49988 20.8062 7.49988Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M24.8409 14.9999H5.19396C4.5537 14.9999 4.03467 15.6379 4.03467 16.4249V16.5749C4.03467 17.3619 4.5537 17.9999 5.19396 17.9999H24.8409C25.4812 17.9999 26.0002 17.3619 26.0002 16.5749V16.4249C26.0002 15.6379 25.4812 14.9999 24.8409 14.9999Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M24.8406 0H5.19372C4.55346 0 4.03442 0.638004 4.03442 1.42502V1.57503C4.03442 2.36204 4.55346 3.00005 5.19372 3.00005H24.8406C25.4809 3.00005 25.9999 2.36204 25.9999 1.57503V1.42502C25.9999 0.638004 25.4809 0 24.8406 0Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul
-                    class="navbar-nav d-flex w-100 align-items-end align-items-sm-center justify-content-between"
-                  >
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        aria-current="page"
-                        href="#servicos"
-                        ><strong>Serviços</strong></a
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="18"
+                        viewBox="0 0 26 18"
+                        fill="none"
                       >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#trabalhos"
-                        ><strong>Trabalhos</strong></a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#depoimentos"
-                        ><strong>Depoimentos</strong></a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#quem-somos"
-                        ><strong>Quem somos</strong></a
-                      >
-                    </li>
-                    <a href="#contato" class="btn btn-bg-azul"
-                      ><strong>Contato</strong></a
+                        <path
+                          d="M20.8062 7.49988H1.15929C0.519032 7.49988 0 8.13788 0 8.9249V9.0749C0 9.86192 0.519032 10.4999 1.15929 10.4999H20.8062C21.4465 10.4999 21.9655 9.86192 21.9655 9.0749V8.9249C21.9655 8.13788 21.4465 7.49988 20.8062 7.49988Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M24.8409 14.9999H5.19396C4.5537 14.9999 4.03467 15.6379 4.03467 16.4249V16.5749C4.03467 17.3619 4.5537 17.9999 5.19396 17.9999H24.8409C25.4812 17.9999 26.0002 17.3619 26.0002 16.5749V16.4249C26.0002 15.6379 25.4812 14.9999 24.8409 14.9999Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M24.8406 0H5.19372C4.55346 0 4.03442 0.638004 4.03442 1.42502V1.57503C4.03442 2.36204 4.55346 3.00005 5.19372 3.00005H24.8406C25.4809 3.00005 25.9999 2.36204 25.9999 1.57503V1.42502C25.9999 0.638004 25.4809 0 24.8406 0Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul
+                      class="navbar-nav d-flex w-100 align-items-end align-items-sm-center justify-content-between"
                     >
-                  </ul>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active"
+                          aria-current="page"
+                          href="#servicos"
+                          ><strong>Serviços</strong></a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#trabalhos"
+                          ><strong>Trabalhos</strong></a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos"
+                          ><strong>Depoimentos</strong></a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#quem-somos"
+                          ><strong>Quem somos</strong></a
+                        >
+                      </li>
+                      <a href="#contato" class="btn btn-bg-azul"
+                        ><strong>Contato</strong></a
+                      >
+                    </ul>
+                  </div>
                 </div>
               </div>
             </nav>
@@ -163,34 +166,23 @@
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <h1>
-                    FERRAMENTAS CRIATIVAS PARA
-                    <span class="rounded-underline">IMPULSIONAR</span>
+                    FERRAMENTAS CRIATIVAS <br />
+                    PARA
+                    <span class="rounded-underline">IMPULSIONAR</span> <br />
                     <span class="rounded-underline">A SUA EMPRESA</span>
                   </h1>
                   <p>
-                    No estúdio PUYA! trabalhamos de forma imersiva em cada
-                    projeto, captando suas necessidades, gerando ideias
-                    criativas e desenvolvendo resultados por meio de processos
-                    consistentes.
+                    No estúdio PUYA! trabalhamos de forma <br />
+                    imersiva em cada projeto, captando suas <br />
+                    necessidades, gerando ideias criativas <br />
+                    e desenvolvendo resultados por meio <br />
+                    de processos consistentes.
                   </p>
                   <a href="#contato" class="btn btn-bg-azul"
                     >Entre em contato</a
                   >
                 </div>
-                <div class="col-12 col-sm-6">
-                  <div class="puya-pato">
-                    <img
-                      id="puya"
-                      src="./public/images/utils/puya_rosa.png"
-                      class="w-100"
-                    />
-                    <img
-                      id="pato"
-                      src="./public/images/utils/pato.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
+                <div class="col-12 col-sm-6"></div>
               </div>
             </section>
           </div>
@@ -201,10 +193,12 @@
                   <h1>NOSSOS SERVIÇOS</h1>
                   <p>
                     Aqui na PUYA! trabalhamos tanto com projetos
-                    <strong>pontuais</strong> quanto por meio de um
-                    <strong>modelo outsourcing de design</strong>, no qual
-                    captamos as demandas da sua empresa e otimizamos as entregas
-                    para não sobrecarregar a sua equipe.
+                    <strong>pontuais</strong> quanto por <br />
+                    meio de um <strong>modelo outsourcing de design</strong>, no
+                    qual captamos as <br />
+                    demandas da sua empresa e otimizamos as entregas para não
+                    <br />
+                    sobrecarregar a sua equipe.
                     <strong>Conheça os nossos principais serviços.</strong>
                   </p>
                 </div>
@@ -622,7 +616,8 @@
                                 <div class="row justify-content-center">
                                   <div class="col-10">
                                     <h4 class="card-title">
-                                      IDENTIDADE VISUAL <span>&</span> BRANDING
+                                      IDENTIDADE VISUAL
+                                      <span>&</span> BRANDING
                                     </h4>
                                   </div>
                                 </div>
@@ -860,10 +855,8 @@
             </section>
           </div>
         </div>
-      </div>
 
-      <section id="trabalhos" class="justify-content-center">
-        <div class="row justify-content-center mt-5 my-sm-5">
+        <section id="trabalhos" class="justify-content-center">
           <div class="col-11">
             <h1>VEJA UM POUQUINHO <br />DOS NOSSOS PROJETOS</h1>
             <div
@@ -975,341 +968,149 @@
               </div>
             </div>
           </div>
+        </section>
+
+        <div class="col-12">
+          <section id="depoimentos">
+            <h1>DEPOIMENTOS</h1>
+            <div class="col-7">
+              <p>
+                Confira o que os clientes que passaram pela PUYA! estão falando
+                sobre os nossos serviços.
+              </p>
+            </div>
+            <div class="depoimentos-carrousel">
+              <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <div class="depoimento-item">
+                      <div class="row">
+                        <div class="col-1">
+                          <span class="quotation quotation-before">“</span>
+                        </div>
+                        <div class="col-10">
+                          <p>
+                            <strong>
+                              A gente precisava muito de um site pra levar os
+                              nossos clientes às reservas. O pessoal da PUYA!
+                              nos explicou todo o processo e realizou o projeto
+                              sempre nos comunicando cada passo. Isso fez com
+                              que chegassem no que queríamos, o site ficou lindo
+                              e tem ajudado bastante.
+                            </strong>
+                          </p>
+                          <h3>
+                            <strong>Marta Valéria</strong>, Hotel Carajás.
+                          </h3>
+                        </div>
+                        <div class="col-1 align-self-end">
+                          <span class="quotation quotation-after">“</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <div class="depoimento-item">
+                      <div class="row">
+                        <div class="col-1">
+                          <span class="quotation quotation-before">“</span>
+                        </div>
+                        <div class="col-10">
+                          <p>
+                            <strong>
+                              Cara, eu fiquei muito empolgado com o resultado da
+                              identidade visual da minha loja. Além de ter sido
+                              muito fácil trabalhar com o pessoal, captam tudo
+                              muito rápido. Me senti seguro com o investimento
+                              no projeto.
+                            </strong>
+                          </p>
+                          <h3>
+                            <strong>Júlio Ribeiro</strong>, Valliant Moda
+                            Social.
+                          </h3>
+                        </div>
+                        <div class="col-1 align-self-end">
+                          <span class="quotation quotation-after">“</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <div class="depoimento-item">
+                      <div class="row">
+                        <div class="col-1">
+                          <span class="quotation quotation-before">“</span>
+                        </div>
+                        <div class="col-10">
+                          <p>
+                            <strong>
+                              Eu gostei muito do trabalho que a PUYA! fez com a
+                              minha marca e o design do meu site. Entendem muito
+                              da área de tecnologia, então foi bem fácil
+                              explicar o que eu queria, pegaram tudo com
+                              tranquilidade e transformaram as ideias com uma
+                              ótima entrega. Fiquei muito feliz com o resultado.
+                            </strong>
+                          </p>
+                          <h3><strong>Wisley Rodrigues</strong>, Notdaw.</h3>
+                        </div>
+                        <div class="col-1 align-self-end">
+                          <span class="quotation quotation-after">“</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <div class="depoimento-item">
+                      <div class="row">
+                        <div class="col-1">
+                          <span class="quotation quotation-before">“</span>
+                        </div>
+                        <div class="col-10">
+                          <p>
+                            <strong>
+                              Foi ótimo trabalhar com a PUYA!. Foram muito
+                              atenciosos, comunicativos, entenderam rapidamente
+                              as minhas necessidades e ideias. No fim, o
+                              trabalho ficou lindo. Indico pra todo mundo!
+                            </strong>
+                          </p>
+                          <h3>
+                            <strong>Isadora Mendes</strong>, Advocacia e
+                            Consultoria Jurídica.
+                          </h3>
+                        </div>
+                        <div class="col-1 align-self-end">
+                          <span class="quotation quotation-after">“</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-      <div class="row justify-content-center">
-        <div class="col-11">
-          <div class="col-12">
-            <section id="depoimentos">
-              <h1>DEPOIMENTOS</h1>
-              <div class="col-7">
+        <div class="col-12">
+          <section id="quem-somos">
+            <div class="row">
+              <div
+                class="col-sm-6 order-2 order-sm-1 d-flex align-items-center"
+              >
+                <img
+                  src="./public/images/quem-somos/puya-com-mao.png"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-sm-6 order-1 order-sm-2">
+                <h1>CONHEÇA MAIS DA PUYA!</h1>
                 <p>
-                  Confira o que os clientes que passaram pela PUYA! estão
-                  falando sobre os nossos serviços.
-                </p>
-              </div>
-              <div class="depoimentos-carrousel">
-                <div class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner text-center">
-                    <div class="carousel-item active" data-bs-interval="4000">
-                      <div class="depoimento-item">
-                        <div class="row">
-                          <div class="col-1">
-                            <span class="quotation quotation-before">“</span>
-                          </div>
-                          <div class="col-10">
-                            <p>
-                              <strong>
-                                A gente precisava muito de um site pra levar os
-                                nossos clientes às reservas. O pessoal da PUYA!
-                                nos explicou todo o processo e realizou o
-                                projeto sempre nos comunicando cada passo. Isso
-                                fez com que chegassem no que queríamos, o site
-                                ficou lindo e tem ajudado bastante.
-                              </strong>
-                            </p>
-                            <h3>
-                              <strong>Marta Valéria</strong>, Hotel Carajás.
-                            </h3>
-                          </div>
-                          <div class="col-1 align-self-end">
-                            <span class="quotation quotation-after">“</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                      <div class="depoimento-item">
-                        <div class="row">
-                          <div class="col-1">
-                            <span class="quotation quotation-before">“</span>
-                          </div>
-                          <div class="col-10">
-                            <p>
-                              <strong>
-                                Cara, eu fiquei muito empolgado com o resultado
-                                da identidade visual da minha loja. Além de ter
-                                sido muito fácil trabalhar com o pessoal, captam
-                                tudo muito rápido. Me senti seguro com o
-                                investimento no projeto.
-                              </strong>
-                            </p>
-                            <h3>
-                              <strong>Júlio Ribeiro</strong>, Valliant Moda
-                              Social.
-                            </h3>
-                          </div>
-                          <div class="col-1 align-self-end">
-                            <span class="quotation quotation-after">“</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                      <div class="depoimento-item">
-                        <div class="row">
-                          <div class="col-1">
-                            <span class="quotation quotation-before">“</span>
-                          </div>
-                          <div class="col-10">
-                            <p>
-                              <strong>
-                                Eu gostei muito do trabalho que a PUYA! fez com
-                                a minha marca e o design do meu site. Entendem
-                                muito da área de tecnologia, então foi bem fácil
-                                explicar o que eu queria, pegaram tudo com
-                                tranquilidade e transformaram as ideias com uma
-                                ótima entrega. Fiquei muito feliz com o
-                                resultado.
-                              </strong>
-                            </p>
-                            <h3><strong>Wisley Rodrigues</strong>, Notdaw.</h3>
-                          </div>
-                          <div class="col-1 align-self-end">
-                            <span class="quotation quotation-after">“</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                      <div class="depoimento-item">
-                        <div class="row">
-                          <div class="col-1">
-                            <span class="quotation quotation-before">“</span>
-                          </div>
-                          <div class="col-10">
-                            <p>
-                              <strong>
-                                Foi ótimo trabalhar com a PUYA!. Foram muito
-                                atenciosos, comunicativos, entenderam
-                                rapidamente as minhas necessidades e ideias. No
-                                fim, o trabalho ficou lindo. Indico pra todo
-                                mundo!
-                              </strong>
-                            </p>
-                            <h3>
-                              <strong>Isadora Mendes</strong>, Advocacia e
-                              Consultoria Jurídica.
-                            </h3>
-                          </div>
-                          <div class="col-1 align-self-end">
-                            <span class="quotation quotation-after">“</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-          <div class="col-12">
-            <section id="quem-somos">
-              <div class="row">
-                <div
-                  class="col-sm-6 order-2 order-sm-1 d-flex align-items-center"
-                >
-                  <img
-                    src="./public/images/quem-somos/puya-com-mao.png"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-sm-6 order-1 order-sm-2">
-                  <h1>CONHEÇA MAIS DA PUYA!</h1>
-                  <p>
-                    A <strong>PUYA!</strong> é um estúdio criativo genuinamente
-                    latino-americano, que carrega nas cores, na identidade, na
-                    tecnologia e nos afetos a força colaborativa e
-                    transformadora do design. É por meio dessas raízes que
-                    direcionamos o nosso objetivo principal diariamente:
-                    <strong>plantar design para florescer negócios.</strong>
-                    Aqui, priorizamos o cuidado, a comunicação e os processos
-                    para chegar a resultados consistentes. Isso é o que faz da
-                    PUYA! um estúdio disruptivo, disposto a trilhar novas ideias
-                    a cada instante.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-          <div class="col-12">
-            <section id="contato">
-              <div class="row gx-1">
-                <div
-                  class="col-12 col-sm-6 d-flex flex-wrap align-content-center"
-                >
-                  <h1>
-                    VAMOS CONSTRUIR PROJETOS LINDOS QUE VÃO IMPACTAR O SEU
-                    NEGÓCIO?
-                  </h1>
-                  <p>
-                    Ao preencher o formulário, receberemos sua mensagem
-                    automaticamente e retornaremos o mais rápido possível.
-                    Assim, poderemos ouvir as suas necessidades, te conhecer
-                    melhor e iniciar uma jornada incrível de design para
-                    <strong>impulsionar a sua empresa!</strong>
-                  </p>
-                </div>
-                <div class="col-12 col-sm-6 form-contato">
-                  <!-- <form action="">
-                    <div class="mb-3">
-                      <label for="nome" class="form-label"
-                        >Nome da empresa/pessoa</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="nome"
-                        placeholder="Ex. Empresa Co./ João"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">E-mail</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Ex. eumesmo@email.com"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="tipo" class="form-label">Tipo de projeto</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="tipo"
-                        placeholder="Ex. Site, Identidade Visual etc."
-                      />
-                    </div>
-                    <div class="mb-4">
-                      <label for="observacao" class="form-label">Observações</label>
-                      <textarea
-                        type="text"
-                        class="form-control"
-                        id="observacao"
-                        rows="10"
-                        placeholder="Deixe aqui alguma informação adicional ou dúvida que você julga ser necessária para o desenvolvimento do projeto."
-                      ></textarea>
-                    </div>
-                    <div class="mb-3 d-flex justify-content-center">
-                      <button type="button" class="btn btn-bg-laranja">
-                        Enviar
-                      </button>
-                    </div>
-                  </form> -->
-                  <div id="agradecimento">
-                    <h1>OBRIGADO!</h1>
-                    <p>
-                      Recebemos o seu contato e retornaremos o mais rápido
-                      possível!
-                    </p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="166"
-                      height="139"
-                      viewBox="0 0 166 139"
-                      fill="none"
-                    >
-                      <g filter="url(#filter0_d_377_1553)">
-                        <path
-                          d="M139.727 1.82844C138.165 0.266334 135.632 0.266337 134.07 1.82844L58.2014 77.697C56.6393 79.2591 54.1066 79.2591 52.5445 77.697L31.7607 56.9132C30.1986 55.3511 27.6659 55.3511 26.1038 56.9132L5.82843 77.1885C4.26633 78.7506 4.26633 81.2833 5.82842 82.8454L29.4407 106.458L52.7138 129.731C54.2759 131.293 56.8086 131.293 58.3707 129.731L81.4747 106.627L160.172 27.9303C161.734 26.3682 161.734 23.8355 160.172 22.2734L139.727 1.82844Z"
-                          fill="#00DD84"
-                        />
-                      </g>
-                      <defs>
-                        <filter
-                          id="filter0_d_377_1553"
-                          x="0.656738"
-                          y="0.657227"
-                          width="164.687"
-                          height="138.245"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          />
-                          <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha"
-                          />
-                          <feOffset dy="4" />
-                          <feGaussianBlur stdDeviation="2" />
-                          <feComposite in2="hardAlpha" operator="out" />
-                          <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_377_1553"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_377_1553"
-                            result="shape"
-                          />
-                        </filter>
-                      </defs>
-                    </svg>
-                    <img src="./public/images/formulario/mao-rock.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div class="row justify-content-center">
-          <div class="col-11">
-            <div class="row justify-content-center">
-              <div class="col-12 col-sm-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="104"
-                  height="45"
-                  viewBox="0 0 104 45"
-                  fill="none"
-                >
-                  <path
-                    d="M11.526 0C19.0426 0 23.3013 4.88531 23.3013 15.8486V15.9733C23.3013 27.3106 19.4806 30.9459 11.3979 30.9459H11.2733V43.8499H0V0H11.526ZM11.2766 21.1719H11.4013C12.028 21.1719 12.028 21.0473 12.028 20.1713V10.7746C12.028 9.89865 12.028 9.77399 11.4013 9.77399H11.2766V21.1753V21.1719Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M35.3285 0V33.7019C35.3285 34.3926 35.4532 34.7026 35.7059 34.7026C35.9585 34.7026 36.0832 34.3892 36.0832 33.7019V0H47.3598V32.8259C47.3598 40.2786 43.1012 44.4766 35.5205 44.4766C27.9399 44.4766 24.0586 40.4032 24.0586 32.8259V0H35.3352H35.3285Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M59.1966 0V16.4753H59.9479V0H71.2245L65.0859 31.9466V43.8499H53.8093V31.9466L47.9199 0H59.1966Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M89.327 0L92.0829 43.8499H80.8063V34.8306H80.055V43.8499H68.7783L71.787 0H89.327ZM80.8063 25.0566V19.6693H80.055V25.0566H80.8063Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M103.922 0V6.26331L102.669 32.3846H93.8988L92.6455 6.26331V0H103.922Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M100.883 41.7708C100.344 41.7303 99.8522 41.5012 99.4783 41.1239C99.4479 41.0936 99.4142 41.0599 99.3839 41.0262C99.421 41.6057 99.2424 42.1616 98.8651 42.6131L98.4237 43.1454L98.299 44.1157L98.1676 43.142L97.7229 42.6232C97.3422 42.1784 97.1535 41.6191 97.1872 41.0396C96.9648 41.2957 96.6852 41.4979 96.3719 41.6293C96.1562 41.7202 95.9305 41.7741 95.698 41.7943L95.0208 41.8516L94.2425 42.4547L94.8355 41.6731L94.8894 40.9925C94.9332 40.4096 95.196 39.8807 95.6306 39.4966C95.0512 39.5336 94.4919 39.3517 94.0438 38.9743L93.5215 38.5363L92.5479 38.4117L93.5215 38.2803L94.037 37.8356C94.4818 37.4548 95.0377 37.2662 95.6205 37.2999C95.5835 37.2695 95.5498 37.2358 95.5161 37.2022C95.3106 36.9966 95.1455 36.7507 95.0309 36.4845C94.94 36.2689 94.8861 36.0432 94.8658 35.8073L94.8086 35.1234L94.2089 34.3485L94.9838 34.9381L95.6745 34.9953C96.2573 35.0425 96.7829 35.3053 97.167 35.7399C97.1266 35.1571 97.3119 34.5978 97.6892 34.1497L98.1306 33.6241L98.2552 32.6504L98.3866 33.6241L98.828 34.1429C99.2087 34.5877 99.394 35.147 99.3603 35.7265C99.5827 35.4704 99.8657 35.2682 100.176 35.1368C100.388 35.0492 100.617 34.992 100.85 34.9718L101.533 34.9145L102.305 34.3181L101.712 35.0998L101.658 35.777C101.645 35.9623 101.608 36.1409 101.55 36.3127C101.54 36.343 101.53 36.3733 101.517 36.4037C101.51 36.4205 101.503 36.434 101.5 36.4508C101.493 36.471 101.483 36.4879 101.476 36.5081C101.459 36.5452 101.442 36.5822 101.426 36.6193C101.416 36.6361 101.405 36.6563 101.399 36.6732C101.277 36.8956 101.116 37.1011 100.92 37.2729C101.5 37.2358 102.059 37.4178 102.507 37.7951L103.026 38.2331L104 38.3578L103.029 38.4892L102.511 38.9339C102.066 39.3146 101.51 39.5033 100.927 39.4662C101.186 39.692 101.389 39.9716 101.517 40.2816C101.608 40.4938 101.661 40.7229 101.682 40.9554L101.739 41.6326L102.342 42.4143L101.56 41.8213L100.876 41.7674L100.883 41.7708Z"
-                    fill="#FEAF00"
-                  />
-                </svg>
-              </div>
-              <div class="col-12 col-sm-3">
-                <p class="text-footer">
                   A <strong>PUYA!</strong> é um estúdio criativo genuinamente
                   latino-americano, que carrega nas cores, na identidade, na
                   tecnologia e nos afetos a força colaborativa e transformadora
-                  do design. É por meio dessas raízes, que se fortalecem
-                  diariamente, que direcionamos o nosso objetivo principal:
+                  do design. É por meio dessas raízes que direcionamos o nosso
+                  objetivo principal diariamente:
                   <strong>plantar design para florescer negócios.</strong>
                   Aqui, priorizamos o cuidado, a comunicação e os processos para
                   chegar a resultados consistentes. Isso é o que faz da PUYA! um
@@ -1317,99 +1118,221 @@
                   instante.
                 </p>
               </div>
-              <div class="col-12 col-sm-3">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <a href="#servicos">Serviços</a>
-                  </li>
-                  <li class="list-group-item">
-                    <a href="#trabalhos">Trabalhos</a>
-                  </li>
-                  <li class="list-group-item">
-                    <a href="#depoimentos">Depoimentos</a>
-                  </li>
-                  <li class="list-group-item">
-                    <a href="#quem-somos">Quem somos</a>
-                  </li>
-                </ul>
-              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-12">
+          <section id="contato">
+            <div class="row gx-1">
               <div
-                class="col-12 col-sm-3 informacoes d-flex flex-column justify-content-between"
+                class="col-12 col-sm-6 d-flex flex-wrap align-content-center"
               >
-                <div>
-                  <h4><strong>Encontre o Estúdio PUYA!</strong></h4>
-                  <span>+55 81 99759-5897</span>
-                  <span>contato@estudiopuya.com.br</span>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <a href="https://instagram.com/estudiopuya" target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="36"
-                      height="36"
-                      viewBox="0 0 36 36"
-                      fill="none"
+                <h1>
+                  VAMOS CONSTRUIR PROJETOS LINDOS QUE VÃO IMPACTAR O SEU
+                  NEGÓCIO?
+                </h1>
+                <p>
+                  Ao preencher o formulário, receberemos sua mensagem
+                  automaticamente e retornaremos o mais rápido possível. Assim,
+                  poderemos ouvir as suas necessidades, te conhecer melhor e
+                  iniciar uma jornada incrível de design para
+                  <strong>impulsionar a sua empresa!</strong>
+                </p>
+              </div>
+              <div class="col-12 col-sm-6 form-contato">
+                <form action="">
+                  <div class="mb-3">
+                    <label for="nome" class="form-label"
+                      >Nome da empresa/pessoa</label
                     >
-                      <path
-                        d="M10.6364 0C4.77 0 0 4.77 0 10.6364V25.3636C0 31.23 4.77 36 10.6364 36H25.3636C31.23 36 36 31.23 36 25.3636V10.6364C36 4.77 31.23 0 25.3636 0H10.6364ZM27.8182 6.54545C28.7182 6.54545 29.4545 7.28182 29.4545 8.18182C29.4545 9.08182 28.7182 9.81818 27.8182 9.81818C26.9182 9.81818 26.1818 9.08182 26.1818 8.18182C26.1818 7.28182 26.9182 6.54545 27.8182 6.54545ZM18 9C22.9664 9 27 13.0336 27 18C27 22.9664 22.9664 27 18 27C13.0336 27 9 22.9664 9 18C9 13.0336 13.0336 9 18 9ZM18 10.6364C13.9418 10.6364 10.6364 13.9418 10.6364 18C10.6364 22.0582 13.9418 25.3636 18 25.3636C22.0582 25.3636 25.3636 22.0582 25.3636 18C25.3636 13.9418 22.0582 10.6364 18 10.6364Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </a>
-                  <a href="https://www.behance.net/estudiopuya" target="_blank">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="37"
-                      height="36"
-                      viewBox="0 0 37 36"
-                      fill="none"
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nome"
+                      placeholder="Ex. Empresa Co./ João"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Ex. eumesmo@email.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="tipo" class="form-label">Tipo de projeto</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="tipo"
+                      placeholder="Ex. Site, Identidade Visual etc."
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label for="observacao" class="form-label"
+                      >Observações</label
                     >
-                      <path
-                        d="M4.40476 0C1.97333 0 0 1.92 0 4.28571V31.7143C0 34.08 1.97333 36 4.40476 36H32.5952C35.0267 36 37 34.08 37 31.7143V4.28571C37 1.92 35.0267 0 32.5952 0H4.40476ZM7.04762 12H12.9768C13.6199 12 17.0994 11.9574 17.0994 15.0603C17.0994 16.706 15.945 17.2626 15.4253 17.5112C16.2005 17.7512 17.619 18.4457 17.619 20.5714C17.619 23.8543 13.7513 24 13.2315 24H7.04762V12ZM22.0238 12H28.1905V13.7143H22.0238V12ZM9.69048 14.0826V16.8951H12.5278C12.9154 16.8951 14.2002 16.6886 14.2002 15.4286C14.2002 14.1686 12.5269 14.0826 12.2714 14.0826H9.69048ZM25.3102 14.5714C28.7459 14.5714 29.6789 17.1769 29.8199 17.7941C29.952 18.4198 29.9524 18.9686 29.9524 19.7143H22.9925C22.9925 20.46 23.3986 22.1401 25.4513 22.1401C25.9975 22.1401 26.4017 22.012 26.8157 21.7634C27.2209 21.5148 27.3632 21.2737 27.4953 21.0251H29.8113C29.4061 22.0108 28.8601 22.7579 28.0408 23.255C27.2215 23.7522 26.2701 24 25.1777 24C24.4905 24 23.8121 23.8719 23.125 23.6233C22.5788 23.3748 22.0333 23.0058 21.6281 22.6373C21.2228 22.2601 20.9497 21.7628 20.6766 21.1456C20.4035 20.6485 20.2619 19.9029 20.2619 19.2857C20.2619 18.6686 20.5178 14.5714 25.3102 14.5714ZM25.3102 16.3108C23.3192 16.3108 22.9925 18.1713 22.9925 18.2913H27.3629C27.2219 17.6742 26.6492 16.3108 25.3102 16.3108ZM9.69048 18.6094V21.9174H12.643C12.8976 21.9174 14.694 21.8408 14.694 20.3237C14.694 18.8151 13.2826 18.6094 12.643 18.6094H9.69048Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/estudiopuya/"
-                    target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="37"
-                      height="36"
-                      viewBox="0 0 37 36"
-                      fill="none"
-                    >
-                      <path
-                        d="M32.5952 0H4.40476C1.97333 0 0 1.92 0 4.28571V31.7143C0 34.08 1.97333 36 4.40476 36H32.5952C35.0267 36 37 34.08 37 31.7143V4.28571C37 1.92 35.0267 0 32.5952 0ZM11.4524 13.7143V30H6.16667V13.7143H11.4524ZM6.16667 8.97429C6.16667 7.77429 7.22381 6.85714 8.80952 6.85714C10.3952 6.85714 11.3907 7.77429 11.4524 8.97429C11.4524 10.1743 10.4657 11.1429 8.80952 11.1429C7.22381 11.1429 6.16667 10.1743 6.16667 8.97429ZM30.8333 30H25.5476C25.5476 30 25.5476 22.0629 25.5476 21.4286C25.5476 19.7143 24.6667 18 22.4643 17.9657H22.3938C20.2619 17.9657 19.381 19.7314 19.381 21.4286C19.381 22.2086 19.381 30 19.381 30H14.0952V13.7143H19.381V15.9086C19.381 15.9086 21.0812 13.7143 24.4993 13.7143C27.9967 13.7143 30.8333 16.0543 30.8333 20.7943V30Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://br.pinterest.com/estudiopuya/"
-                    target="_blank"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="37"
-                      height="36"
-                      viewBox="0 0 37 36"
-                      fill="none"
-                    >
-                      <path
-                        d="M18.5 0C8.29916 0 0 8.07486 0 18C0 25.7354 5.04131 32.3454 12.0945 34.8863C11.8913 33.1242 11.9232 30.2384 12.2584 28.8412C12.5723 27.5287 14.2864 20.4773 14.2864 20.4773C14.2864 20.4773 13.7689 19.4691 13.7689 17.9799C13.7689 15.6398 15.1624 13.8938 16.8977 13.8938C18.3736 13.8938 19.0853 14.9719 19.0853 16.2637C19.0853 17.7081 18.1415 19.8658 17.6526 21.8655C17.2449 23.541 18.516 24.9071 20.2134 24.9071C23.287 24.9071 25.6495 21.7535 25.6495 17.2021C25.6495 13.1735 22.6751 10.3564 18.4269 10.3564C13.5068 10.3564 10.6188 13.9475 10.6188 17.6589C10.6188 19.1047 11.1909 20.6553 11.9059 21.4992C12.0469 21.6661 12.0675 21.8118 12.0256 21.9813C11.8946 22.5126 11.6032 23.6555 11.5454 23.8898C11.4702 24.1985 11.2946 24.2625 10.9673 24.1143C8.80703 23.1358 7.45676 20.0638 7.45676 17.5955C7.45676 12.2882 11.4196 7.41314 18.8838 7.41314C24.8833 7.41314 29.5452 11.5718 29.5452 17.1315C29.5452 22.9307 25.7866 27.5973 20.5712 27.5973C18.8186 27.5973 17.1717 26.7114 16.6084 25.6649C16.6084 25.6649 15.741 28.8774 15.5302 29.665C15.1663 31.0271 13.6084 33.8488 12.8263 35.1305C14.6154 35.6928 16.5211 36 18.5 36C28.7012 36 37 27.9255 37 18C37 8.07486 28.7012 0 18.5 0Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      id="observacao"
+                      rows="10"
+                      placeholder="Deixe aqui alguma informação adicional ou dúvida que você julga ser necessária para o desenvolvimento do projeto."
+                    ></textarea>
+                  </div>
+                  <div class="mb-3 d-flex justify-content-center">
+                    <button type="button" class="btn btn-bg-laranja">
+                      Enviar
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
+          </section>
+        </div>
+      </div>
+    </main> -->
+    <footer>
+      <div class="row custom-gutter mx-0">
+        <div class="col-12 col-sm-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="104"
+            height="45"
+            viewBox="0 0 104 45"
+            fill="none"
+          >
+            <path
+              d="M11.526 0C19.0426 0 23.3013 4.88531 23.3013 15.8486V15.9733C23.3013 27.3106 19.4806 30.9459 11.3979 30.9459H11.2733V43.8499H0V0H11.526ZM11.2766 21.1719H11.4013C12.028 21.1719 12.028 21.0473 12.028 20.1713V10.7746C12.028 9.89865 12.028 9.77399 11.4013 9.77399H11.2766V21.1753V21.1719Z"
+              fill="white"
+            />
+            <path
+              d="M35.3285 0V33.7019C35.3285 34.3926 35.4532 34.7026 35.7059 34.7026C35.9585 34.7026 36.0832 34.3892 36.0832 33.7019V0H47.3598V32.8259C47.3598 40.2786 43.1012 44.4766 35.5205 44.4766C27.9399 44.4766 24.0586 40.4032 24.0586 32.8259V0H35.3352H35.3285Z"
+              fill="white"
+            />
+            <path
+              d="M59.1966 0V16.4753H59.9479V0H71.2245L65.0859 31.9466V43.8499H53.8093V31.9466L47.9199 0H59.1966Z"
+              fill="white"
+            />
+            <path
+              d="M89.327 0L92.0829 43.8499H80.8063V34.8306H80.055V43.8499H68.7783L71.787 0H89.327ZM80.8063 25.0566V19.6693H80.055V25.0566H80.8063Z"
+              fill="white"
+            />
+            <path
+              d="M103.922 0V6.26331L102.669 32.3846H93.8988L92.6455 6.26331V0H103.922Z"
+              fill="white"
+            />
+            <path
+              d="M100.883 41.7708C100.344 41.7303 99.8522 41.5012 99.4783 41.1239C99.4479 41.0936 99.4142 41.0599 99.3839 41.0262C99.421 41.6057 99.2424 42.1616 98.8651 42.6131L98.4237 43.1454L98.299 44.1157L98.1676 43.142L97.7229 42.6232C97.3422 42.1784 97.1535 41.6191 97.1872 41.0396C96.9648 41.2957 96.6852 41.4979 96.3719 41.6293C96.1562 41.7202 95.9305 41.7741 95.698 41.7943L95.0208 41.8516L94.2425 42.4547L94.8355 41.6731L94.8894 40.9925C94.9332 40.4096 95.196 39.8807 95.6306 39.4966C95.0512 39.5336 94.4919 39.3517 94.0438 38.9743L93.5215 38.5363L92.5479 38.4117L93.5215 38.2803L94.037 37.8356C94.4818 37.4548 95.0377 37.2662 95.6205 37.2999C95.5835 37.2695 95.5498 37.2358 95.5161 37.2022C95.3106 36.9966 95.1455 36.7507 95.0309 36.4845C94.94 36.2689 94.8861 36.0432 94.8658 35.8073L94.8086 35.1234L94.2089 34.3485L94.9838 34.9381L95.6745 34.9953C96.2573 35.0425 96.7829 35.3053 97.167 35.7399C97.1266 35.1571 97.3119 34.5978 97.6892 34.1497L98.1306 33.6241L98.2552 32.6504L98.3866 33.6241L98.828 34.1429C99.2087 34.5877 99.394 35.147 99.3603 35.7265C99.5827 35.4704 99.8657 35.2682 100.176 35.1368C100.388 35.0492 100.617 34.992 100.85 34.9718L101.533 34.9145L102.305 34.3181L101.712 35.0998L101.658 35.777C101.645 35.9623 101.608 36.1409 101.55 36.3127C101.54 36.343 101.53 36.3733 101.517 36.4037C101.51 36.4205 101.503 36.434 101.5 36.4508C101.493 36.471 101.483 36.4879 101.476 36.5081C101.459 36.5452 101.442 36.5822 101.426 36.6193C101.416 36.6361 101.405 36.6563 101.399 36.6732C101.277 36.8956 101.116 37.1011 100.92 37.2729C101.5 37.2358 102.059 37.4178 102.507 37.7951L103.026 38.2331L104 38.3578L103.029 38.4892L102.511 38.9339C102.066 39.3146 101.51 39.5033 100.927 39.4662C101.186 39.692 101.389 39.9716 101.517 40.2816C101.608 40.4938 101.661 40.7229 101.682 40.9554L101.739 41.6326L102.342 42.4143L101.56 41.8213L100.876 41.7674L100.883 41.7708Z"
+              fill="#FEAF00"
+            />
+          </svg>
+        </div>
+        <div class="col-12 col-sm-3">
+          <p class="text-footer">
+            A <strong>PUYA!</strong> é um estúdio criativo genuinamente <br />
+            latino-americano, que carrega nas cores, <br />
+            na identidade, na tecnologia e nos afetos <br />
+            a força colaborativa e transformadora do <br />
+            design. É por meio dessas raízes, que <br />
+            se fortalecem diariamente, que direcionamos <br />
+            o nosso objetivo principal:
+            <strong>plantar design </strong> <br />
+            <strong> para florescer negócios. </strong>
+            Aqui, priorizamos <br />
+            o cuidado, a comunicação e os processos <br />
+            para chegar a resultados consistentes. <br />
+            Isso é o que faz da PUYA! um estúdio <br />
+            disruptivo, disposto a trilhar novas ideias <br />
+            a cada instante.
+          </p>
+        </div>
+        <div class="col-12 col-sm-3">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="#servicos">Serviços</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#trabalhos">Trabalhos</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#depoimentos">Depoimentos</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#quem-somos">Quem somos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-3 contato-footer">
+          <h4><strong>Encontre o Estúdio PUYA!</strong></h4>
+          <span class="telefone">+55 81 99759-5897</span>
+          <span>contato@estudiopuya.com.br</span>
+          <div class="redes-sociais">
+            <a href="https://instagram.com/estudiopuya" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+              >
+                <path
+                  d="M10.6364 0C4.77 0 0 4.77 0 10.6364V25.3636C0 31.23 4.77 36 10.6364 36H25.3636C31.23 36 36 31.23 36 25.3636V10.6364C36 4.77 31.23 0 25.3636 0H10.6364ZM27.8182 6.54545C28.7182 6.54545 29.4545 7.28182 29.4545 8.18182C29.4545 9.08182 28.7182 9.81818 27.8182 9.81818C26.9182 9.81818 26.1818 9.08182 26.1818 8.18182C26.1818 7.28182 26.9182 6.54545 27.8182 6.54545ZM18 9C22.9664 9 27 13.0336 27 18C27 22.9664 22.9664 27 18 27C13.0336 27 9 22.9664 9 18C9 13.0336 13.0336 9 18 9ZM18 10.6364C13.9418 10.6364 10.6364 13.9418 10.6364 18C10.6364 22.0582 13.9418 25.3636 18 25.3636C22.0582 25.3636 25.3636 22.0582 25.3636 18C25.3636 13.9418 22.0582 10.6364 18 10.6364Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="https://www.behance.net/estudiopuya" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="37"
+                height="36"
+                viewBox="0 0 37 36"
+                fill="none"
+              >
+                <path
+                  d="M4.40476 0C1.97333 0 0 1.92 0 4.28571V31.7143C0 34.08 1.97333 36 4.40476 36H32.5952C35.0267 36 37 34.08 37 31.7143V4.28571C37 1.92 35.0267 0 32.5952 0H4.40476ZM7.04762 12H12.9768C13.6199 12 17.0994 11.9574 17.0994 15.0603C17.0994 16.706 15.945 17.2626 15.4253 17.5112C16.2005 17.7512 17.619 18.4457 17.619 20.5714C17.619 23.8543 13.7513 24 13.2315 24H7.04762V12ZM22.0238 12H28.1905V13.7143H22.0238V12ZM9.69048 14.0826V16.8951H12.5278C12.9154 16.8951 14.2002 16.6886 14.2002 15.4286C14.2002 14.1686 12.5269 14.0826 12.2714 14.0826H9.69048ZM25.3102 14.5714C28.7459 14.5714 29.6789 17.1769 29.8199 17.7941C29.952 18.4198 29.9524 18.9686 29.9524 19.7143H22.9925C22.9925 20.46 23.3986 22.1401 25.4513 22.1401C25.9975 22.1401 26.4017 22.012 26.8157 21.7634C27.2209 21.5148 27.3632 21.2737 27.4953 21.0251H29.8113C29.4061 22.0108 28.8601 22.7579 28.0408 23.255C27.2215 23.7522 26.2701 24 25.1777 24C24.4905 24 23.8121 23.8719 23.125 23.6233C22.5788 23.3748 22.0333 23.0058 21.6281 22.6373C21.2228 22.2601 20.9497 21.7628 20.6766 21.1456C20.4035 20.6485 20.2619 19.9029 20.2619 19.2857C20.2619 18.6686 20.5178 14.5714 25.3102 14.5714ZM25.3102 16.3108C23.3192 16.3108 22.9925 18.1713 22.9925 18.2913H27.3629C27.2219 17.6742 26.6492 16.3108 25.3102 16.3108ZM9.69048 18.6094V21.9174H12.643C12.8976 21.9174 14.694 21.8408 14.694 20.3237C14.694 18.8151 13.2826 18.6094 12.643 18.6094H9.69048Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/estudiopuya/"
+              target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="37"
+                height="36"
+                viewBox="0 0 37 36"
+                fill="none"
+              >
+                <path
+                  d="M32.5952 0H4.40476C1.97333 0 0 1.92 0 4.28571V31.7143C0 34.08 1.97333 36 4.40476 36H32.5952C35.0267 36 37 34.08 37 31.7143V4.28571C37 1.92 35.0267 0 32.5952 0ZM11.4524 13.7143V30H6.16667V13.7143H11.4524ZM6.16667 8.97429C6.16667 7.77429 7.22381 6.85714 8.80952 6.85714C10.3952 6.85714 11.3907 7.77429 11.4524 8.97429C11.4524 10.1743 10.4657 11.1429 8.80952 11.1429C7.22381 11.1429 6.16667 10.1743 6.16667 8.97429ZM30.8333 30H25.5476C25.5476 30 25.5476 22.0629 25.5476 21.4286C25.5476 19.7143 24.6667 18 22.4643 17.9657H22.3938C20.2619 17.9657 19.381 19.7314 19.381 21.4286C19.381 22.2086 19.381 30 19.381 30H14.0952V13.7143H19.381V15.9086C19.381 15.9086 21.0812 13.7143 24.4993 13.7143C27.9967 13.7143 30.8333 16.0543 30.8333 20.7943V30Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="https://br.pinterest.com/estudiopuya/" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="37"
+                height="36"
+                viewBox="0 0 37 36"
+                fill="none"
+              >
+                <path
+                  d="M18.5 0C8.29916 0 0 8.07486 0 18C0 25.7354 5.04131 32.3454 12.0945 34.8863C11.8913 33.1242 11.9232 30.2384 12.2584 28.8412C12.5723 27.5287 14.2864 20.4773 14.2864 20.4773C14.2864 20.4773 13.7689 19.4691 13.7689 17.9799C13.7689 15.6398 15.1624 13.8938 16.8977 13.8938C18.3736 13.8938 19.0853 14.9719 19.0853 16.2637C19.0853 17.7081 18.1415 19.8658 17.6526 21.8655C17.2449 23.541 18.516 24.9071 20.2134 24.9071C23.287 24.9071 25.6495 21.7535 25.6495 17.2021C25.6495 13.1735 22.6751 10.3564 18.4269 10.3564C13.5068 10.3564 10.6188 13.9475 10.6188 17.6589C10.6188 19.1047 11.1909 20.6553 11.9059 21.4992C12.0469 21.6661 12.0675 21.8118 12.0256 21.9813C11.8946 22.5126 11.6032 23.6555 11.5454 23.8898C11.4702 24.1985 11.2946 24.2625 10.9673 24.1143C8.80703 23.1358 7.45676 20.0638 7.45676 17.5955C7.45676 12.2882 11.4196 7.41314 18.8838 7.41314C24.8833 7.41314 29.5452 11.5718 29.5452 17.1315C29.5452 22.9307 25.7866 27.5973 20.5712 27.5973C18.8186 27.5973 17.1717 26.7114 16.6084 25.6649C16.6084 25.6649 15.741 28.8774 15.5302 29.665C15.1663 31.0271 13.6084 33.8488 12.8263 35.1305C14.6154 35.6928 16.5211 36 18.5 36C28.7012 36 37 27.9255 37 18C37 8.07486 28.7012 0 18.5 0Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -1427,19 +1350,19 @@
     ></script>
     <script src="./public/jquery/jquery.min.css"></script>
     <script>
-      $(function () {
-        const heightFormContato = $("#agradecimento").height();
+      // $(function () {
+      //   const heightFormContato = $("#agradecimento").height();
 
-        const heightImg = $("#agradecimento img").height();
+      //   const heightImg = $("#agradecimento img").height();
 
-        $("#agradecimento").height(heightFormContato + heightImg);
+      //   $("#agradecimento").height(heightFormContato + heightImg);
 
-        const heightPuya = $("#puya").height();
-        const widthPuya = $("#puya").width();
+      //   const heightPuya = $("#puya").height();
+      //   const widthPuya = $("#puya").width();
 
-        $("#pato").width(widthPuya * 0.62898089171975);
-        $("#pato").height(heightPuya * 0.93949044585987);
-      });
+      //   $("#pato").width(widthPuya * 0.62898089171975);
+      //   $("#pato").height(heightPuya * 0.93949044585987);
+      // });
     </script>
   </body>
 </html>

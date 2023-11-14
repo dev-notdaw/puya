@@ -12,6 +12,7 @@ body {
   background-color: #2d2d2d;
   z-index: 1;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 #sobre h1 {
@@ -230,19 +231,19 @@ nav {
   position: relative;
 }
 
-#agradecimento > img {
+/* #agradecimento > img {
   position: absolute;
   margin: auto;
   display: block;
   width: 45%;
-  /* height: 50%; */
+
   overflow: hidden;
   left: 0;
   right: 0;
   bottom: -10%;
   text-align: center;
   animation: movimento-sobe 4s, movimento-lateral 10s infinite;
-}
+} */
 
 @keyframes movimento-sobe {
   from {
@@ -276,6 +277,7 @@ footer {
 }
 
 .text-footer {
+  margin-bottom: 0;
   color: #fff;
   font-family: Roboto Condensed;
   font-size: 1.125rem;
@@ -300,10 +302,6 @@ footer ul li a {
 
 footer ul li a:hover {
   color: #feaf00 !important;
-}
-
-footer .informacoes span {
-  font-size: 1.125rem;
 }
 
 .depoimento-item p {
@@ -345,7 +343,7 @@ footer .informacoes span {
 
 #puya {
   z-index: 0;
-  animation: spin 10s linear infinite;
+  /* animation: spin 10s linear infinite; */
 }
 
 @keyframes spin {
@@ -421,7 +419,7 @@ footer .informacoes span {
     padding-bottom: 2.5rem;
   }
 
-  footer {
+  footer .row .col-12:first-child {
     padding-top: 2.5rem;
   }
 
@@ -453,4 +451,32 @@ footer .informacoes span {
   .offcanvas-body {
     padding: 0;
   }
+
+  .redes-sociais {
+    padding-top: 2.5rem;
+  }
+
+  .redes-sociais a {
+    display: inline-block;
+    margin-right: 0.9rem;
+    font-size: 1.5rem;
+  }
+
+  .contato-footer h4 {
+    margin-bottom: 1.31rem;
+    font-size: 1.5rem;
+  }
+
+  .telefone {
+    display: block;
+    margin-bottom: 0.63rem !important;
+  }
+
+  .custom-gutter {
+    --bs-gutter-x: 2rem;
+  }
+}
+
+* {
+  outline: 1px solid #f00 !important;
 }
