@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
     <title>Estúdio PUYA!</title>
     <link
       rel="icon"
@@ -24,12 +27,12 @@
     />
   </head>
   <body>
-    <!-- <main>
+    <main>
       <div class="row custom-gutter mx-0">
         <div class="col-12">
           <div class="col-12">
             <nav class="navbar navbar-expand-lg">
-              <div class="col-12 col-sm-2">
+              <div class="col-12 col-sm-2 d-flex justify-content-between">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="104"
@@ -166,23 +169,30 @@
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <h1>
-                    FERRAMENTAS CRIATIVAS <br />
-                    PARA
-                    <span class="rounded-underline">IMPULSIONAR</span> <br />
-                    <span class="rounded-underline">A SUA EMPRESA</span>
+                    FERRAMENTAS CRIATIVAS PARA
+                    <span class="rounded-underline"
+                      >IMPULSIONAR A SUA EMPRESA</span
+                    >
                   </h1>
                   <p>
-                    No estúdio PUYA! trabalhamos de forma <br />
-                    imersiva em cada projeto, captando suas <br />
-                    necessidades, gerando ideias criativas <br />
-                    e desenvolvendo resultados por meio <br />
-                    de processos consistentes.
+                    No estúdio PUYA! trabalhamos de forma imersiva <br />
+                    em cada projeto, captando suas necessidades,<br />
+                    gerando ideias criativas e desenvolvendo <br />
+                    resultados por meio de processos consistentes.
                   </p>
-                  <a href="#contato" class="btn btn-bg-azul"
-                    >Entre em contato</a
-                  >
+                  <div class="col-9 d-sm-none">
+                    <a href="#contato" class="btn btn-bg-azul btn-custom"
+                      >Entre em contato</a
+                    >
+                  </div>
                 </div>
-                <div class="col-12 col-sm-6"></div>
+                <div class="col-12 col-sm-6 puya-pato">
+                  <img
+                    src="./public/images/utils/pato_com_puya.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </div>
               </div>
             </section>
           </div>
@@ -192,13 +202,14 @@
                 <div class="col-11 col-sm-10">
                   <h1>NOSSOS SERVIÇOS</h1>
                   <p>
-                    Aqui na PUYA! trabalhamos tanto com projetos
-                    <strong>pontuais</strong> quanto por <br />
-                    meio de um <strong>modelo outsourcing de design</strong>, no
-                    qual captamos as <br />
-                    demandas da sua empresa e otimizamos as entregas para não
-                    <br />
-                    sobrecarregar a sua equipe.
+                    Aqui na PUYA! trabalhamos tanto com projetos <br />
+                    <strong>pontuais</strong> quanto por meio de um
+                    <strong
+                      >modelo <br />
+                      outsourcing de design</strong
+                    >, no qual captamos as <br />
+                    demandas da sua empresa e otimizamos as <br />
+                    entregas para não sobrecarregar a sua equipe. <br />
                     <strong>Conheça os nossos principais serviços.</strong>
                   </p>
                 </div>
@@ -857,7 +868,7 @@
         </div>
 
         <section id="trabalhos" class="justify-content-center">
-          <div class="col-11">
+          <div class="col-12">
             <h1>VEJA UM POUQUINHO <br />DOS NOSSOS PROJETOS</h1>
             <div
               id="carouselTrabalhos"
@@ -972,50 +983,101 @@
 
         <div class="col-12">
           <section id="depoimentos">
-            <h1>DEPOIMENTOS</h1>
-            <div class="col-7">
-              <p>
-                Confira o que os clientes que passaram pela PUYA! estão falando
-                sobre os nossos serviços.
-              </p>
+            <div class="depoimentos-header">
+              <h1>DEPOIMENTOS</h1>
+              <div class="col-10">
+                <p>
+                  Confira o que os nossos clientes têm falado dos nossos
+                  trabalhos.
+                </p>
+              </div>
             </div>
+
             <div class="depoimentos-carrousel">
               <div class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner text-center">
                   <div class="carousel-item active" data-bs-interval="4000">
-                    <div class="depoimento-item">
+                    <div
+                      class="depoimento-item d-flex flex-column justify-content-between"
+                    >
                       <div class="row">
-                        <div class="col-1">
-                          <span class="quotation quotation-before">“</span>
+                        <div class="col-12 d-flex mb-3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="45"
+                            height="47"
+                            viewBox="0 0 45 47"
+                            fill="none"
+                          >
+                            <path
+                              d="M21.4227 0L18.9918 46.188H0L7.29284 0H21.4227ZM44.0609 0L41.63 46.188H22.6382L29.931 0H44.0609Z"
+                              fill="#285DFF"
+                            />
+                          </svg>
                         </div>
-                        <div class="col-10">
+                      </div>
+                      <div class="row">
+                        <div class="col-11 mx-auto">
                           <p>
                             <strong>
-                              A gente precisava muito de um site pra levar os
-                              nossos clientes às reservas. O pessoal da PUYA!
-                              nos explicou todo o processo e realizou o projeto
-                              sempre nos comunicando cada passo. Isso fez com
-                              que chegassem no que queríamos, o site ficou lindo
-                              e tem ajudado bastante.
+                              A gente precisava muito de um site pra levar
+                              <br />
+                              os nossos clientes às reservas. O pessoal da
+                              <br />
+                              PUYA! nos explicou todo o processo e realizou o
+                              projeto sempre nos comunicando cada <br />
+                              passo. Isso fez com que chegassem no que <br />
+                              queríamos, o site ficou lindo e tem ajudado <br />
+                              bastante.
                             </strong>
                           </p>
                           <h3>
                             <strong>Marta Valéria</strong>, Hotel Carajás.
                           </h3>
                         </div>
-                        <div class="col-1 align-self-end">
-                          <span class="quotation quotation-after">“</span>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-end mt-3 align-items-end"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="45"
+                            height="47"
+                            viewBox="0 0 45 47"
+                            fill="none"
+                          >
+                            <path
+                              d="M22.7905 46.188L25.2215 0H44.2133L36.9204 46.188H22.7905ZM0.152344 46.188L2.58329 0H21.5751L14.2822 46.188H0.152344Z"
+                              fill="#285DFF"
+                            />
+                          </svg>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="4000">
-                    <div class="depoimento-item">
+                    <div
+                      class="depoimento-item d-flex flex-column justify-content-between"
+                    >
                       <div class="row">
-                        <div class="col-1">
-                          <span class="quotation quotation-before">“</span>
+                        <div class="col-12 d-flex mb-3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="45"
+                            height="47"
+                            viewBox="0 0 45 47"
+                            fill="none"
+                          >
+                            <path
+                              d="M21.4227 0L18.9918 46.188H0L7.29284 0H21.4227ZM44.0609 0L41.63 46.188H22.6382L29.931 0H44.0609Z"
+                              fill="#285DFF"
+                            />
+                          </svg>
                         </div>
-                        <div class="col-10">
+                      </div>
+                      <div class="row">
+                        <div class="col-11 mx-auto">
                           <p>
                             <strong>
                               Cara, eu fiquei muito empolgado com o resultado da
@@ -1030,19 +1092,49 @@
                             Social.
                           </h3>
                         </div>
-                        <div class="col-1 align-self-end">
-                          <span class="quotation quotation-after">“</span>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-end mt-3 align-items-end"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="45"
+                            height="47"
+                            viewBox="0 0 45 47"
+                            fill="none"
+                          >
+                            <path
+                              d="M22.7905 46.188L25.2215 0H44.2133L36.9204 46.188H22.7905ZM0.152344 46.188L2.58329 0H21.5751L14.2822 46.188H0.152344Z"
+                              fill="#285DFF"
+                            />
+                          </svg>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="4000">
-                    <div class="depoimento-item">
+                    <div
+                      class="depoimento-item d-flex flex-column justify-content-between"
+                    >
                       <div class="row">
-                        <div class="col-1">
-                          <span class="quotation quotation-before">“</span>
+                        <div class="col-12 d-flex mb-3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="45"
+                            height="47"
+                            viewBox="0 0 45 47"
+                            fill="none"
+                          >
+                            <path
+                              d="M21.4227 0L18.9918 46.188H0L7.29284 0H21.4227ZM44.0609 0L41.63 46.188H22.6382L29.931 0H44.0609Z"
+                              fill="#285DFF"
+                            />
+                          </svg>
                         </div>
-                        <div class="col-10">
+                      </div>
+                      <div class="row">
+                        <div class="col-11 mx-auto">
                           <p>
                             <strong>
                               Eu gostei muito do trabalho que a PUYA! fez com a
@@ -1055,19 +1147,49 @@
                           </p>
                           <h3><strong>Wisley Rodrigues</strong>, Notdaw.</h3>
                         </div>
-                        <div class="col-1 align-self-end">
-                          <span class="quotation quotation-after">“</span>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-end mt-3 align-items-end"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="45"
+                            height="47"
+                            viewBox="0 0 45 47"
+                            fill="none"
+                          >
+                            <path
+                              d="M22.7905 46.188L25.2215 0H44.2133L36.9204 46.188H22.7905ZM0.152344 46.188L2.58329 0H21.5751L14.2822 46.188H0.152344Z"
+                              fill="#285DFF"
+                            />
+                          </svg>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="4000">
-                    <div class="depoimento-item">
+                    <div
+                      class="depoimento-item d-flex flex-column justify-content-between"
+                    >
                       <div class="row">
-                        <div class="col-1">
-                          <span class="quotation quotation-before">“</span>
+                        <div class="col-12 d-flex mb-3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="45"
+                            height="47"
+                            viewBox="0 0 45 47"
+                            fill="none"
+                          >
+                            <path
+                              d="M21.4227 0L18.9918 46.188H0L7.29284 0H21.4227ZM44.0609 0L41.63 46.188H22.6382L29.931 0H44.0609Z"
+                              fill="#285DFF"
+                            />
+                          </svg>
                         </div>
-                        <div class="col-10">
+                      </div>
+                      <div class="row">
+                        <div class="col-11 mx-auto">
                           <p>
                             <strong>
                               Foi ótimo trabalhar com a PUYA!. Foram muito
@@ -1081,8 +1203,23 @@
                             Consultoria Jurídica.
                           </h3>
                         </div>
-                        <div class="col-1 align-self-end">
-                          <span class="quotation quotation-after">“</span>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-end mt-3 align-items-end"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="45"
+                            height="47"
+                            viewBox="0 0 45 47"
+                            fill="none"
+                          >
+                            <path
+                              d="M22.7905 46.188L25.2215 0H44.2133L36.9204 46.188H22.7905ZM0.152344 46.188L2.58329 0H21.5751L14.2822 46.188H0.152344Z"
+                              fill="#285DFF"
+                            />
+                          </svg>
                         </div>
                       </div>
                     </div>
@@ -1103,19 +1240,28 @@
                   class="img-fluid"
                 />
               </div>
+              <div class="col-9 mx-auto padding-custom d-sm-none">
+                <a href="#contato" class="btn btn-bg-azul btn-custom d-block"
+                  >Entre em contato</a
+                >
+              </div>
               <div class="col-sm-6 order-1 order-sm-2">
                 <h1>CONHEÇA MAIS DA PUYA!</h1>
                 <p>
                   A <strong>PUYA!</strong> é um estúdio criativo genuinamente
-                  latino-americano, que carrega nas cores, na identidade, na
-                  tecnologia e nos afetos a força colaborativa e transformadora
-                  do design. É por meio dessas raízes que direcionamos o nosso
-                  objetivo principal diariamente:
-                  <strong>plantar design para florescer negócios.</strong>
-                  Aqui, priorizamos o cuidado, a comunicação e os processos para
-                  chegar a resultados consistentes. Isso é o que faz da PUYA! um
-                  estúdio disruptivo, disposto a trilhar novas ideias a cada
-                  instante.
+                  latino-americano, que carrega nas cores, na identidade, <br />
+                  na tecnologia e nos afetos a força colaborativa <br />
+                  e transformadora do design. É por meio dessas raízes que
+                  direcionamos o nosso objetivo principal diariamente:
+                  <strong
+                    >plantar design para florescer <br />
+                    negócios.</strong
+                  >
+                  Aqui, priorizamos o cuidado, <br />
+                  a comunicação e os processos para chegar <br />
+                  a resultados consistentes. Isso é o que faz <br />
+                  da PUYA! um estúdio disruptivo, disposto <br />
+                  a trilhar novas ideias a cada instante.
                 </p>
               </div>
             </div>
@@ -1125,23 +1271,27 @@
           <section id="contato">
             <div class="row gx-1">
               <div
-                class="col-12 col-sm-6 d-flex flex-wrap align-content-center"
+                class="col-12 mb-2 col-sm-6 d-flex flex-wrap align-content-center"
               >
                 <h1>
-                  VAMOS CONSTRUIR PROJETOS LINDOS QUE VÃO IMPACTAR O SEU
-                  NEGÓCIO?
+                  VAMOS CONSTRUIR PROJETOS LINDOS QUE VÃO IMPACTAR <br />
+                  O SEU NEGÓCIO?
                 </h1>
                 <p>
                   Ao preencher o formulário, receberemos sua mensagem
-                  automaticamente e retornaremos o mais rápido possível. Assim,
-                  poderemos ouvir as suas necessidades, te conhecer melhor e
-                  iniciar uma jornada incrível de design para
-                  <strong>impulsionar a sua empresa!</strong>
+                  automaticamente e retornaremos <br />
+                  o mais rápido possível. Assim, poderemos ouvir <br />
+                  as suas necessidades, te conhecer melhor e iniciar uma jornada
+                  incrível de design para
+                  <strong
+                    >impulsionar <br />
+                    a sua empresa!</strong
+                  >
                 </p>
               </div>
               <div class="col-12 col-sm-6 form-contato">
                 <form action="">
-                  <div class="mb-3">
+                  <div class="mb-4 mb-sm-3">
                     <label for="nome" class="form-label"
                       >Nome da empresa/pessoa</label
                     >
@@ -1152,7 +1302,7 @@
                       placeholder="Ex. Empresa Co./ João"
                     />
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-4 mb-sm-3">
                     <label for="email" class="form-label">E-mail</label>
                     <input
                       type="email"
@@ -1161,7 +1311,7 @@
                       placeholder="Ex. eumesmo@email.com"
                     />
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-4 mb-sm-3">
                     <label for="tipo" class="form-label">Tipo de projeto</label>
                     <input
                       type="text"
@@ -1170,7 +1320,7 @@
                       placeholder="Ex. Site, Identidade Visual etc."
                     />
                   </div>
-                  <div class="mb-4">
+                  <div class="mb-sm-4">
                     <label for="observacao" class="form-label"
                       >Observações</label
                     >
@@ -1178,11 +1328,13 @@
                       type="text"
                       class="form-control"
                       id="observacao"
-                      rows="10"
+                      rows="8"
                       placeholder="Deixe aqui alguma informação adicional ou dúvida que você julga ser necessária para o desenvolvimento do projeto."
                     ></textarea>
                   </div>
-                  <div class="mb-3 d-flex justify-content-center">
+                  <div
+                    class="d-flex justify-content-center botao-envia-contato"
+                  >
                     <button type="button" class="btn btn-bg-laranja">
                       Enviar
                     </button>
@@ -1193,7 +1345,7 @@
           </section>
         </div>
       </div>
-    </main> -->
+    </main>
     <footer>
       <div class="row custom-gutter mx-0">
         <div class="col-12 col-sm-3">
@@ -1234,7 +1386,8 @@
           <p class="text-footer">
             A <strong>PUYA!</strong> é um estúdio criativo genuinamente <br />
             latino-americano, que carrega nas cores, <br />
-            na identidade, na tecnologia e nos afetos <br />
+            na identidade, <br />
+            na tecnologia e nos afetos <br />
             a força colaborativa e transformadora do <br />
             design. É por meio dessas raízes, que <br />
             se fortalecem diariamente, que direcionamos <br />

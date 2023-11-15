@@ -19,12 +19,6 @@ body {
   display: inline-block;
 }
 
-.rounded-underline {
-  display: inline-block;
-  padding-bottom: 1rem;
-  line-height: 55%;
-}
-
 #navbar-toggler li a {
   color: #fff !important;
   font-family: Roboto Condensed;
@@ -32,14 +26,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-
-.rounded-underline::after {
-  content: "";
-  display: block;
-  width: 100%;
-  border-radius: 1rem;
-  border-bottom: 10px solid #feaf00;
 }
 
 .navbar-collapse li a:hover {
@@ -183,18 +169,9 @@ div.align-self-end:has(.quotation-after) {
   transform: rotate(180deg);
 }
 
-#contato {
-  overflow: hidden;
-}
-
 .form-contato {
   border-radius: 2rem;
   background: #fb438c;
-  min-height: 55rem;
-}
-
-.form-contato {
-  padding: 3rem 2rem;
 }
 
 .form-contato form input,
@@ -219,10 +196,6 @@ div.align-self-end:has(.quotation-after) {
 }
 
 section {
-  margin-bottom: 5rem;
-}
-
-nav {
   margin-bottom: 5rem;
 }
 
@@ -304,19 +277,6 @@ footer ul li a:hover {
   color: #feaf00 !important;
 }
 
-.depoimento-item p {
-  color: #fff;
-  text-align: center;
-  font-family: Thunder;
-  font-size: 2.57519rem;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.depoimento-item h3 {
-  font-size: 1.71675rem;
-}
-
 .navbar-toggler {
   border: none !important;
 }
@@ -377,6 +337,38 @@ footer ul li a:hover {
   footer ul li a {
     margin-bottom: 2rem;
   }
+
+  .form-contato {
+    min-height: 55rem;
+    padding: 3rem 2rem;
+  }
+
+  .rounded-underline {
+    display: inline-block;
+    padding-bottom: 1rem;
+    line-height: 55%;
+  }
+
+  .rounded-underline::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    border-bottom: 10px solid #feaf00;
+  }
+
+  .depoimento-item p {
+    color: #fff;
+    text-align: center;
+    font-family: Thunder;
+    font-size: 2.57519rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .depoimento-item h3 {
+    font-size: 1.71675rem;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -427,17 +419,12 @@ footer ul li a:hover {
     margin-bottom: 1.25rem;
   }
 
-  .offcanvas.offcanvas-end.show {
+  .offcanvas.offcanvas-end {
     height: 100%;
     width: 80%;
     border-radius: 2rem 0rem 0rem 2rem;
     background: #ff4a8b;
     padding-right: 2.44rem;
-  }
-
-  .offcanvas.offcanvas-end.show a {
-    color: #fff !important;
-    font-size: 2rem;
   }
 
   .offcanvas.offcanvas-end.show .btn {
@@ -475,8 +462,120 @@ footer ul li a:hover {
   .custom-gutter {
     --bs-gutter-x: 2rem;
   }
+
+  .form-contato {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .form-contato label {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .botao-envia-contato {
+    margin-top: 2.69rem;
+  }
+
+  input.form-control::placeholder {
+    color: #e4e0e0 !important;
+    font-size: 0.875rem !important;
+  }
+
+  input.form-control {
+    padding: 1.12rem 0rem 1.19rem 1.25rem;
+    line-height: normal;
+    font-size: 0.875rem !important;
+  }
+
+  textarea.form-control::placeholder {
+    color: #e4e0e0 !important;
+    font-size: 0.875rem !important;
+  }
+
+  textarea.form-control {
+    padding: 1.25rem 1.5rem 0 1.25rem !important;
+    text-align: left !important;
+  }
+
+  section {
+    margin-bottom: 6.25rem;
+  }
+
+  .btn-custom {
+    padding: 1.125rem 3.125rem;
+  }
+
+  .padding-custom {
+    padding: 1.86rem 0 6.25rem 0;
+  }
+
+  .rounded-underline {
+    display: inline-block;
+    line-height: 65%;
+  }
+
+  .rounded-underline::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    border-bottom: 4px solid #feaf00;
+  }
+
+  .depoimento-item {
+    min-height: 24rem;
+  }
+
+  .depoimento-item p {
+    color: #fff;
+    text-align: center;
+    font-family: Thunder;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .depoimento-item h3 {
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
+  #trabalhos {
+    padding-top: 2.88rem;
+  }
+  #sobre p {
+    margin-bottom: 2.15rem;
+  }
+
+  .puya-pato {
+    margin-top: 1.81rem;
+  }
+
+  nav {
+    margin-bottom: 2.91rem;
+  }
+
+  button[data-bs-dismiss="offcanvas"] {
+    background-color: #ff4a8b;
+    border: none;
+  }
+
+  .offcanvas-body li {
+    margin-bottom: 2.5rem;
+  }
+
+  .offcanvas-body .btn-bg-azul {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    padding: 1.12rem 4.25rem !important;
+  }
+
+  .depoimentos-header p {
+    margin-bottom: 1.94rem;
+  }
 }
 
-* {
+/* * {
   outline: 1px solid #f00 !important;
-}
+} */
