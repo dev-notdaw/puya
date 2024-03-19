@@ -1,0 +1,68 @@
+#btn-offcanvas {
+  color: white !important;
+  background-image: none;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+nav {
+  padding: 1.56rem 0rem !important;
+
+  #offcanvasMenu {
+    height: 100%;
+    width: 77%;
+    border-radius: 2rem 0rem 0rem 2rem;
+    background: #ff4a8b;
+    padding-right: 2.44rem;
+
+    li.nav-item > a {
+      color: #fff;
+      font-family: "Roboto Condensed";
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .offcanvas.offcanvas-end.show .btn {
+      padding: 1.125rem 4.25rem !important;
+    }
+    
+    .offcanvas-header {
+      padding: 2.13rem 0 5rem 0;
+    }
+    
+    .offcanvas-body {
+      padding: 0;
+    }
+    
+    button[data-bs-dismiss="offcanvas"] {
+      background-color: #ff4a8b;
+      border: none;
+    }
+    
+    .offcanvas-body li {
+      margin-bottom: 2.5rem;
+    }
+    
+    .offcanvas-body .btn-contato {
+      margin-top: 2.5rem;
+      font-size: 1.5rem;
+      padding: 1.12rem 4.25rem !important;
+    }
+    
+    .offcanvas-body li a.active::before {
+      content: url("../images/puyaLaranja.svg");
+      width: 2.125rem;
+      height: 2.125rem;
+      vertical-align: middle;
+      padding-right: 0.69rem;
+    }
+  }
+}
+
+

@@ -1,0 +1,166 @@
+/* GRIDS */
+@import "./header.css";
+@import "./components.css";
+@import "./intro.css";
+@import "./services.css";
+@import "./portfolio.css";
+@import "./depoiments.css";
+@import "./about.css";
+@import "./contact.css";
+@import "./footer.css";
+
+#verticle-line {
+  width: 1px;
+  left: 20px;
+  min-height: 1000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+
+#verticle-line2 {
+  width: 1px;
+  left: 98px;
+  min-height: 100%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+#verticle-line3 {
+  width: 1px;
+  left: 119px;
+  min-height: 100%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+
+#verticle-line4 {
+  width: 1px;
+  left: 196px;
+  min-height: 100%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+#verticle-line5 {
+  width: 1px;
+  left: 217px;
+  min-height: 100%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+#verticle-line6 {
+  width: 1px;
+  left: 295px;
+  min-height: 100%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+#verticle-line7 {
+  width: 1px;
+  left: 316px;
+  min-height: 100%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+
+#verticle-line1 {
+  width: 1px;
+  left: 393px;
+  min-height: 10000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+
+body {
+  color: #fff !important;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: normal;
+  background-color: #2d2d2d;
+  z-index: 1;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: Thunder;
+  src: url("../fonts/Thunder-BoldLC.ttf");
+}
+
+h1 {
+  color: #fff;
+  font-family: Thunder;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 2.625rem */
+}
+
+a:has(.btn-contato) {
+  text-decoration: none !important;
+}
+
+.btn-contato {
+  background-color: #285dff;
+  border-radius: 4.8125rem;
+  padding: 1.12rem 3.13rem;
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.81rem;
+}
+
+.btn-contato:hover {
+  background-color: #feaf00;
+  transition: 0.5s;
+  color: #fff;
+}
+
+h1.section-title {
+  margin-bottom: 0.63rem;
+}
+
+section {
+  margin-bottom: 6.25rem;
+}
+
+.container-fluid {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #feaf00;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

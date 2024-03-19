@@ -1,0 +1,23 @@
+#depoiments {
+  .depoiment-item p {
+    color: #fff;
+    text-align: center;
+    font-family: Thunder;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .depoiment-item h3 {
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
+  .depoiment-item {
+    min-height: 20rem;
+  }
+
+  .depoiments-carrousel {
+    margin-bottom: 1.86rem;
+  }
+}

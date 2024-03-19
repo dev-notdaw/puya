@@ -1,0 +1,52 @@
+#services {
+  p {
+    margin-bottom: 1.88rem;
+  }
+
+  div.card {
+    border-radius: 2rem;
+    background: #fb438c !important;
+    min-height: 26.75rem;
+    width: 100% !important;
+
+    .card-body {
+      padding: 0rem 1.62rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      svg {
+        margin-bottom: 1.3rem;
+      }
+  
+      .card-title {
+        margin: 1.94rem 0rem 1rem 0rem;
+        color: #f6f6f6;
+        text-align: center;
+        font-family: Thunder;
+        font-size: 1.83769rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+  
+        span {
+          color: #f6f6f6;
+          font-family: "Roboto Condensed";
+          font-size: 1.5625rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+  
+      .card-text {
+        color: #fff;
+        font-family: "Roboto Condensed";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+footer {
+  background: #285dff;
+  padding: 2.5rem 0rem;
+
+  [class^="col"]:not(:last-child) {
+    padding-bottom: 2.5rem;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  ul > li {
+    list-style-type: none;
+
+    a {
+      text-decoration: none !important;
+      color: #fff;
+      font-family: "Roboto Condensed";
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  ul > li:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  #social-media {
+    h3 {
+      color: #fff;
+      font-family: "Roboto Condensed";
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 1.31rem;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 0.63rem;
+    }
+  }
+
+  svg {
+    margin-right: 1rem;
+  }
+}
