@@ -1,5 +1,9 @@
 #portfolio {
   border-radius: 2rem;
   background: #285dff;
-  padding-top: 2.88rem;
+  padding: 2.88rem 0rem;
+
+  .splide__pagination {
+    bottom: -1.3em
+  }
 }

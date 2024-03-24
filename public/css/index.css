@@ -9,29 +9,29 @@
 @import "./contact.css";
 @import "./footer.css";
 
-#verticle-line {
+/* #verticle-line {
   width: 1px;
   left: 20px;
   min-height: 1000%;
   background: red;
   position: absolute;
   overflow: visible;
-  z-index: 1000000000;
+  z-index: 1;
 }
 
 #verticle-line2 {
   width: 1px;
   left: 98px;
-  min-height: 100%;
+  min-height: 1000%;
   background: red;
   position: absolute;
   overflow: visible;
-  z-index: 1000000000;
+  z-index: 100000000000;
 }
 #verticle-line3 {
   width: 1px;
   left: 119px;
-  min-height: 100%;
+  min-height: 1000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -41,7 +41,7 @@
 #verticle-line4 {
   width: 1px;
   left: 196px;
-  min-height: 100%;
+  min-height: 1000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -50,7 +50,7 @@
 #verticle-line5 {
   width: 1px;
   left: 217px;
-  min-height: 100%;
+  min-height: 1000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -59,7 +59,7 @@
 #verticle-line6 {
   width: 1px;
   left: 295px;
-  min-height: 100%;
+  min-height: 1000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -68,7 +68,7 @@
 #verticle-line7 {
   width: 1px;
   left: 316px;
-  min-height: 100%;
+  min-height: 1000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -78,7 +78,83 @@
 #verticle-line1 {
   width: 1px;
   left: 393px;
-  min-height: 10000%;
+  min-height: 1000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+} */
+
+#verticle-line {
+  width: 1px;
+  left: 108px;
+  min-height: 1000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1;
+}
+
+#verticle-line2 {
+  width: 1px;
+  left: 389px;
+  min-height: 1000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 100000000000;
+}
+#verticle-line3 {
+  width: 1px;
+  left: 409px;
+  min-height: 1000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+
+#verticle-line4 {
+  width: 1px;
+  left: 690px;
+  min-height: 1000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+#verticle-line5 {
+  width: 1px;
+  left: 710px;
+  min-height: 1000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+#verticle-line6 {
+  width: 1px;
+  left: 990px;
+  min-height: 1000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+#verticle-line7 {
+  width: 1px;
+  left: 1010px;
+  min-height: 1000%;
+  background: red;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000000000;
+}
+
+#verticle-line1 {
+  width: 1px;
+  left: 1291px;
+  min-height: 1000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -96,6 +172,10 @@ body {
   z-index: 1;
   overflow-x: hidden;
   max-width: 100%;
+
+  @media (min-width: 992px) {
+    font-size: 2rem;
+  }
 }
 
 @font-face {
@@ -110,6 +190,10 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 2.625rem */
+
+  @media (min-width: 992px) {
+    font-size: 5.125rem;
+  }
 }
 
 a:has(.btn-contato) {
@@ -146,6 +230,13 @@ section {
 .container-fluid {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    padding-left: 6.75rem;
+    padding-right: 6.75rem;
+  }
 }
 
 ::-webkit-scrollbar {

@@ -17,6 +17,21 @@
       line-height: normal;
     }
 
+    label {
+      color: #FFF;
+      font-family: "Roboto Condensed";
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    @media (min-width: 992px) {
+      label {
+        font-size: 2rem;
+      }
+    }
+
     input {
       padding: 1.12rem 0rem 1.19rem 1.25rem;
     }

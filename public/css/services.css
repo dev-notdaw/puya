@@ -6,7 +6,7 @@
   div.card {
     border-radius: 2rem;
     background: #fb438c !important;
-    min-height: 26.75rem;
+    height: 100%;
     width: 100% !important;
 
     .card-body {
@@ -48,5 +48,13 @@
         line-height: normal;
       }
     }
+  }
+
+  .splide__pagination {
+    bottom: -0.5em
+  }
+
+  #carrousel-services {
+    padding-bottom: 1.25rem !important;
   }
 }
