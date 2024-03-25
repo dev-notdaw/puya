@@ -114,8 +114,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about">Quem somos</a>
               </li>
-              <a href="#contact" class="btn btn-contato">Contato</a>
             </ul>
+            <a href="#contact" class="btn btn-contato">Contato</a>
           </div>
         </div>
       </nav>
@@ -124,7 +124,7 @@
       <section id="intro">
         <div class="container-fluid">
           <div class="row">
-            <div class="col col-lg-6">
+            <div class="col-12 col-lg-6">
               <h1>FERRAMENTAS CRIATIVAS PARA IMPULSIONAR A SUA EMPRESA</h1>
               <p>
                 No estúdio PUYA! trabalhamos de forma imersiva em cada projeto,
@@ -138,7 +138,7 @@
               </a>
             </div>
 
-            <div class="col col-lg-6">
+            <div class="col-12 col-lg-6">
               <img src="./public/images/puyaPato.png" class="w-100" />
             </div>
           </div>
@@ -867,7 +867,7 @@
             </div>
             <div class="col-12 col-lg">
               <div id="form-contact">
-                <form action="">
+                <form action="#" id="sendEmailForm">
                   <label for="nome" class="form-label"
                     >Nome da empresa/pessoa</label
                   >
@@ -875,6 +875,7 @@
                     type="text"
                     class="form-control"
                     id="nome"
+                    name="name"
                     placeholder="Ex. Empresa Co./ João"
                   />
 
@@ -883,6 +884,7 @@
                     type="email"
                     class="form-control"
                     id="email"
+                    name="email"
                     placeholder="Ex. eumesmo@email.com"
                   />
 
@@ -891,6 +893,7 @@
                     type="text"
                     class="form-control"
                     id="tipo"
+                    name="projectType"
                     placeholder="Ex. Site, Identidade Visual etc."
                   />
 
@@ -900,9 +903,14 @@
                     class="form-control"
                     id="observacao"
                     rows="13"
+                    name="observations"
                     placeholder="Deixe aqui alguma informação adicional ou dúvida que você julga ser necessária para o desenvolvimento do projeto."
                   ></textarea>
-                  <button type="button" class="btn d-block mx-auto">
+                  <button
+                    type="button"
+                    onclick="sendEmail()"
+                    class="btn d-block mx-auto"
+                  >
                     Enviar
                   </button>
                 </form>
@@ -915,10 +923,10 @@
     <footer>
       <div class="container-fluid">
         <div class="row">
-          <div class="col col-lg-2">
+          <div class="col-12 col-lg-2">
             <img src="./public/images/logo.png" />
           </div>
-          <div class="col col-lg-4">
+          <div class="col-12 col-lg-4">
             <p>
               A <b>PUYA!</b> é um estúdio criativo genuinamente
               latino-americano, que carrega nas cores, na identidade, na
@@ -931,7 +939,7 @@
               disposto a trilhar novas ideias a cada instante.
             </p>
           </div>
-          <div class="col col-lg-3">
+          <div class="col-12 col-lg-3">
             <ul>
               <li><a href="#services">Serviços</a></li>
               <li><a href="#portfolio">Trabalhos</a></li>
@@ -939,7 +947,7 @@
               <li><a href="#about">Quem somos</a></li>
             </ul>
           </div>
-          <div class="col col-lg-3">
+          <div class="col-12 col-lg-3">
             <div id="social-media">
               <h3>Encontre o Estúdio PUYA!</h3>
               <span>+55 81 99759-5897</span>
@@ -1031,12 +1039,50 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
-    <script src="./public/jquery/jquery.min.css"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/207bd0173d.js"
       crossorigin="anonymous"
     ></script>
     <script>
+      function sendEmail(e) {
+        const buttonForm = document.querySelector("form button");
+
+        buttonForm.innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
+        buttonForm.classList.add("disabled");
+
+        const inputs = document.querySelectorAll("input");
+
+        inputs.forEach((elem) => {
+          elem.setAttribute("disabled", "");
+        });
+
+        document.querySelector("textarea").setAttribute("disabled", "");
+
+        // $.ajax("https://us-central1-puya-416602.cloudfunctions.net/sendEmail", {
+        //   method: "post",
+        //   data: {
+        //     name: $('[name="name"]').val(),
+        //     email: $('[name="email"]').val(),
+        //     projectType: $('[name="projectType"]').val(),
+        //     observations: $('[name="observations"]').val(),
+        //   },
+        // }).done(function () {
+
+        // })
+
+        $.ajax("https://google.com.br", {
+          method: "get",
+          complete: function() {
+            $('form').html('CONCLUIDO')
+          }
+        })
+      }
+
       document.addEventListener("DOMContentLoaded", function () {
         new Splide("#carrousel-services", {
           type: "loop",

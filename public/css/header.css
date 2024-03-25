@@ -70,6 +70,29 @@ nav {
       .offcanvas-body li {
         margin-bottom: 0;
       }
+
+      li.nav-item > a {
+        font-size: 1.5rem;
+      }
+
+      ul:first-child {
+        padding-left:7.7rem;
+      }
+
+      ul > li.nav-item:last-of-type {
+        padding-right:7.7rem;
+      }
+
+      .offcanvas-body .btn-contato {
+        margin-top: 0rem;
+        font-size: 1.5rem;
+        padding: 1.12rem 4.25rem !important;
+        margin-bottom: 0rem
+      }
     }
+  }
+
+  @media (min-width: 992px) {
+    padding: 3rem 0rem !important;
   }
 }
