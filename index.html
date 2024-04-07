@@ -914,6 +914,27 @@
                     Enviar
                   </button>
                 </form>
+
+                <div class="thanks" hidden>
+                  <h1>OBRIGADO!</h1>
+                  <p>
+                    Recebemos o seu contato e retornaremos <br> o mais rápido possível!
+                  </p>
+  
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="158"
+                    height="131"
+                    viewBox="0 0 158 131"
+                    fill="none"
+                  >
+                    <path
+                      d="M135.727 1.82844C134.165 0.266334 131.632 0.266337 130.07 1.82844L54.2014 77.697C52.6393 79.2591 50.1066 79.2591 48.5445 77.697L27.7607 56.9132C26.1986 55.3511 23.6659 55.3511 22.1038 56.9132L1.82843 77.1885C0.26633 78.7506 0.266326 81.2833 1.82842 82.8454L25.4407 106.458L48.7138 129.731C50.2759 131.293 52.8086 131.293 54.3707 129.731L77.4747 106.627L156.172 27.9303C157.734 26.3682 157.734 23.8355 156.172 22.2734L135.727 1.82844Z"
+                      fill="#00DD84"
+                    />
+                  </svg>
+                  <img src="./public/images/maoRock.jpeg">
+                </div>
               </div>
             </div>
           </div>
@@ -1077,10 +1098,12 @@
 
         $.ajax("https://google.com.br", {
           method: "get",
-          complete: function() {
-            $('form').html('CONCLUIDO')
-          }
-        })
+          complete: function () {
+            console.log('aaaa')
+            $("form").attr("hidden", '');
+            $(".thanks").removeAttr("hidden");
+          },
+        });
       }
 
       document.addEventListener("DOMContentLoaded", function () {

@@ -1,6 +1,5 @@
 /* GRIDS */
 @import "./header.css";
-@import "./components.css";
 @import "./intro.css";
 @import "./services.css";
 @import "./portfolio.css";
@@ -12,7 +11,7 @@
 /* #verticle-line {
   width: 1px;
   left: 20px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -22,7 +21,7 @@
 #verticle-line2 {
   width: 1px;
   left: 98px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -31,7 +30,7 @@
 #verticle-line3 {
   width: 1px;
   left: 119px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -41,7 +40,7 @@
 #verticle-line4 {
   width: 1px;
   left: 196px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -50,7 +49,7 @@
 #verticle-line5 {
   width: 1px;
   left: 217px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -59,7 +58,7 @@
 #verticle-line6 {
   width: 1px;
   left: 295px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -68,7 +67,7 @@
 #verticle-line7 {
   width: 1px;
   left: 316px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -78,7 +77,7 @@
 #verticle-line1 {
   width: 1px;
   left: 393px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -88,7 +87,7 @@
 #verticle-line {
   width: 1px;
   left: 108px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -98,7 +97,7 @@
 #verticle-line2 {
   width: 1px;
   left: 389px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -107,7 +106,7 @@
 #verticle-line3 {
   width: 1px;
   left: 409px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -117,7 +116,7 @@
 #verticle-line4 {
   width: 1px;
   left: 690px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -126,7 +125,7 @@
 #verticle-line5 {
   width: 1px;
   left: 710px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -135,7 +134,7 @@
 #verticle-line6 {
   width: 1px;
   left: 990px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -144,7 +143,7 @@
 #verticle-line7 {
   width: 1px;
   left: 1010px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
@@ -154,7 +153,7 @@
 #verticle-line1 {
   width: 1px;
   left: 1291px;
-  min-height: 1000%;
+  min-height: 1000000%;
   background: red;
   position: absolute;
   overflow: visible;
