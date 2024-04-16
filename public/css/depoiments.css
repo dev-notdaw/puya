@@ -6,11 +6,19 @@
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
+
+    @media (min-width: 992px) {
+      font-size: 2.57519rem;
+    }
   }
 
   .depoiment-item h3 {
     font-size: 1.125rem;
     margin: 0;
+
+    @media (min-width: 992px) {
+      font-size: 1.71675rem;
+    }
   }
 
   .depoiment-item {

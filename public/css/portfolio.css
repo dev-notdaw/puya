@@ -6,4 +6,18 @@
   .splide__pagination {
     bottom: -1.3em
   }
+
+  @media (min-width: 992px) {
+    padding: 6.25rem 0rem  9rem 0rem !important;
+
+    .splide__pagination {
+      bottom: -2em
+    }
+
+    .splide__pagination li button{
+      height: 16px;
+      width: 16px;
+      margin: 3px 10px;
+    }
+  }
 }
