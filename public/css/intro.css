@@ -3,4 +3,56 @@
     padding-bottom: 2.12rem;
     margin: 0;
   }
+
+  h1 > span {
+    background-image: url("../svg/underline.svg");
+    background-position: bottom;
+    background-size: 100% 13px;
+    background-repeat: no-repeat;
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: 992px) {
+    .intro-info {
+      margin-top: 10rem
+    }
+  }
+
+  .puyaRotate {
+    img {
+      position: absolute;
+    }
+
+    .pato {
+      right: 0;
+      bottom: 0;
+      height: 90%;
+    }
+
+    .puya {
+      right: -7%;
+      bottom: 26%;
+      height: 96%;
+      /* -webkit-animation: spin 10s linear infinite;
+      -moz-animation: spin 10s linear infinite;
+      animation: spin 10s linear infinite; */
+    }
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
